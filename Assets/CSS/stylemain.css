@@ -18,7 +18,7 @@ body {
   position: relative;
   background-size: cover;
   background-position: 50% 50%;
-  background-image: url("./GreenForest.jpg");
+   background-image: url("../Photos/GreenForest.jpg");
   }
 
 .overlay {

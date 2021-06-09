@@ -83,7 +83,7 @@ header::after {
   float: left;
   padding: 10px 0;
 }
-
+/* Navigation Bar */
 nav {
 overflow: hidden;
 background-color: black;
@@ -151,16 +151,21 @@ nav a:hover::before {
   display: flex;
   }
 
-/* Adds a hover effect  */
+/* Button Hover  */
 .fa:hover {
-  opacity: 0.9  ;
+  opacity: 0.8  ;
   
 }
 
-/* Instagram */
+.fa::before {
+  font-size: 26;
+
+}
+
+/* Instagram Button */
 .fa-instagram {
   
-  background: #000000;
+  
   color: rgb(255, 255, 255);
   position: absolute;
   right: 10px;
@@ -180,9 +185,9 @@ nav a:hover::before {
 
 }
 
-/* Linkedin */
+/* Linkedin Button */
 .fa-linkedin {
-  background: #000000;
+  
   color: #0e519e ;
   position: absolute;
   right: 109px;
@@ -194,9 +199,9 @@ nav a:hover::before {
   color: #0e519e;
 }
 
-/* Github */
+/* Github Button */
 .fa-github {
-  background: #000000;
+  
   color: #ffffff ;
   position: absolute;
   right: 210px;

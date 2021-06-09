@@ -21,6 +21,8 @@ body {
   background-image: url("../Photos/PinkForest.jpg");
   }
 
+ 
+
 .overlay {
   position: absolute;
   height: 100%;
@@ -31,9 +33,10 @@ body {
   color: white;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   }
+
+  
 
 .overlay h1 {
   font-size: 65px;
@@ -45,14 +48,15 @@ body {
   margin: 142px;
   display: flex;
   flex-wrap: wrap;
-  flex: auto;
-  font-size: 20px;
+  box-shadow: 5px 3px 8px #040404bd;
+  font-size: 17px;
   text-shadow: 2px 2px 5px #903f83;
-  position: absolute;
   left: 0px;
   width: auto;
- 
   padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: black;
 }
 
 head {
@@ -92,7 +96,7 @@ header::after {
   float: left;
   padding: 10px 0;
 }
-
+/* Navigation Bar */
 nav {
 overflow: hidden;
 background-color: black;
@@ -160,16 +164,21 @@ nav a:hover::before {
   display: flex;
   }
 
-/* Adds a hover effect  */
+/* Button Hover */
 .fa:hover {
   opacity: 0.9  ;
   
 }
 
-/* Instagram */
+.fa::before {
+  font-size: 26;
+
+}
+
+/* Instagram Button */
 .fa-instagram {
   
-  background: #000000;
+  
   color: rgb(255, 255, 255);
   position: absolute;
   right: 10px;
@@ -189,9 +198,9 @@ nav a:hover::before {
 
 }
 
-/* Linkedin */
+/* Linkedin Button */
 .fa-linkedin {
-  background: #000000;
+  
   color: #0e519e ;
   position: absolute;
   right: 109px;
@@ -203,9 +212,9 @@ nav a:hover::before {
   color: #0e519e;
 }
 
-/* Github */
+/* Github Button */
 .fa-github {
-  background: #000000;
+  
   color: #ffffff ;
   position: absolute;
   right: 210px;
@@ -215,4 +224,14 @@ nav a:hover::before {
 
   background:#ffffff;
   color: #000000;
+}
+
+img {
+  position:relative;
+  left: -109px;
+  width: 200px;
+  height: 120px;
+  
+ box-shadow: 3px 3px 8px black;
+ border-radius: 25px;
 }

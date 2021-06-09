@@ -32,7 +32,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   }
 
 .overlay h1 {
@@ -151,16 +151,21 @@ nav a:hover::before {
   display: flex;
   }
 
-/* Adds a hover effect  */
+/* Button Hover  */
 .fa:hover {
   opacity: 0.9  ;
   
 }
 
-/* Instagram */
+.fa::before {
+  font-size: 26;
+
+}
+
+/* Instagram Button */
 .fa-instagram {
   
-  background: #000000;
+  
   color: rgb(255, 255, 255);
   position: absolute;
   right: 10px;
@@ -180,9 +185,9 @@ nav a:hover::before {
 
 }
 
-/* Linkedin */
+/* Linkedin Button */
 .fa-linkedin {
-  background: #000000;
+  
   color: #0e519e ;
   position: absolute;
   right: 109px;
@@ -194,9 +199,9 @@ nav a:hover::before {
   color: #0e519e;
 }
 
-/* Github */
+/* Github Button */
 .fa-github {
-  background: #000000;
+  
   color: #ffffff ;
   position: absolute;
   right: 210px;
@@ -207,3 +212,62 @@ nav a:hover::before {
   background:#ffffff;
   color: #000000;
 }
+
+
+
+
+
+.grid-container {
+  display: grid;
+}
+
+
+div.gallery {
+  margin: 5px;
+  float: left;
+  width: 460px;
+  position: relative;
+  
+  
+}
+
+div.gallery:hover {
+  
+  position:relative;
+    top:-25px;
+    width: 600px;
+    height: 900px;
+    display:block;
+    z-index:999;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 46%;
+  border: 2px solid black;
+  box-shadow: 3px 3px 2px black;
+  border-radius: 20px;
+  
+  
+  
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  text-shadow: 4px 7px 9px black;
+}
+
+
+@media screen and (max-width: 992px) {
+  nav a {
+    
+    font-size: 200px;
+
+
+  }
+}
+
+
+
+
